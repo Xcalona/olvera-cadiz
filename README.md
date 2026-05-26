@@ -11,7 +11,7 @@ Página web moderna e interactiva dedicada a la presentación de Olvera, un pueb
 ### Secciones Principales
 
 1. **Inicio (Hero)**
-   - Presentación visual impactante
+   - Presentación visual impactante con foto del castillo
    - Llamadas a la acción destacadas
    - Diseño moderno y responsivo
 
@@ -20,12 +20,14 @@ Página web moderna e interactiva dedicada a la presentación de Olvera, un pueb
    - La Reconquista
    - Patrimonio Colonial
    - Herencia Contemporánea
+   - Con fotografías para cada período
 
 3. **Olvera en la Actualidad**
    - Turismo Rural
    - Cultura Viva
    - Gastronomía Local
    - Naturaleza Preservada
+   - Con fotografías destacadas
 
 4. **Galería Fotográfica**
    - Castillo de Olvera
@@ -58,6 +60,7 @@ Página web moderna e interactiva dedicada a la presentación de Olvera, un pueb
 
 ### Características Técnicas
 - ✅ **100% Responsivo** (Mobile, Tablet, Desktop)
+- ✅ **Fotografías Reales** (De alta calidad de Unsplash)
 - ✅ **Animaciones Suaves** (Fade-in, Floating, Bounce)
 - ✅ **Navegación Sticky** (Menú fijo en la parte superior)
 - ✅ **Menú Hamburguesa** (Para dispositivos móviles)
@@ -70,7 +73,7 @@ Página web moderna e interactiva dedicada a la presentación de Olvera, un pueb
 
 ```
 olvera-cadiz/
-├── index.html          # Estructura HTML
+├── index.html          # Estructura HTML con fotografías
 ├── styles.css          # Estilos CSS (responsive)
 ├── script.js           # Interactividad JavaScript
 └── README.md           # Este archivo
@@ -107,6 +110,7 @@ start index.html
 - **JavaScript (Vanilla)**: Interactividad sin dependencias externas
 - **Font Awesome**: Iconos
 - **Google Fonts**: Tipografías personalizadas
+- **Unsplash**: Banco de imágenes de alta calidad
 - **Intersection Observer API**: Animaciones al scroll
 
 ## 📱 Responsive Design
@@ -148,19 +152,22 @@ Edita las variables en `styles.css`:
 1. Edita `index.html` para cambiar textos y secciones
 2. Mantén la estructura de clases para que los estilos se apliquen correctamente
 
-### Integrar Imágenes Reales
-Reemplaza los emojis (🏰, ⛪, etc.) con URLs de imágenes:
+### Integrar Imágenes Propias
+Reemplaza las URLs de Unsplash por tus propias fotos:
 ```html
-<!-- En lugar de: -->
-<div class="gallery-image">🏰</div>
+<!-- Cambiar esto: -->
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&h=500&fit=crop" 
+     alt="Castillo de Olvera" class="hero-img">
 
-<!-- Usa: -->
-<img src="url-imagen.jpg" alt="Castillo de Olvera" class="gallery-image">
+<!-- Por esto: -->
+<img src="mis-fotos/castillo.jpg" 
+     alt="Castillo de Olvera" class="hero-img">
 ```
 
 ## 📝 Notas
 
-- Esta página utiliza emojis como placeholders para imágenes
+- Esta página utiliza imágenes de alta calidad de Unsplash
+- Todas las imágenes están optimizadas para carga rápida
 - Se pueden integrar fotos reales del pueblo en cualquier momento
 - El contenido es completamente editable
 - La página es completamente autónoma (sin dependencias de librerías externas más allá de CDN)
